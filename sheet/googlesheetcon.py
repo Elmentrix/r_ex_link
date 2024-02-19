@@ -24,7 +24,7 @@ def selection():
         1. View Data
         2. Add Data
         3. Delete
-        
+
         """
     ))
     return selected_number
@@ -49,9 +49,9 @@ def add_data(name, age, inage_link):
 # function for fetching data from spreadsheet
 def fetch_data():
 # Print all data in files
-    print("Total: ", sheet.count())
+    print("items                   " + "                  descriptions                   " + "          image" )
     for rows in sheet[1:]:
-        print(rows[0])
+        print(rows[0], "                    ", rows[1], "                      ", rows[2])
 
 
 # function for deleting a particular dataset from the spreadsheet
